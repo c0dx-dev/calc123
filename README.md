@@ -41,11 +41,7 @@ The plugin now ships as a small folder with assets. To install:
 
 ### Install from zip (WP-Admin or WP-CLI)
 - Zip the `calc123` folder (it must contain the five files above at the root of the archive).  
-- Upload via **Plugins → Add New → Upload Plugin** and activate.  
-- Or with WP-CLI:
-```bash
-wp plugin install calc123.zip --activate
-
+- Upload via **Plugins → Add New → Upload Plugin** and activate.
 
 ---
 
