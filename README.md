@@ -21,9 +21,31 @@ Create multiple calculators in the admin, define variables (number / select / hi
 ---
 
 ## Quick install
-1. Copy `calc123.php` into `/wp-content/plugins/calc123/` (single-file plugin).  
-2. Activate plugin in **Plugins → Installed Plugins**.  
-3. Go to **Calc123** in WP admin to create calculators.
+
+The plugin now ships as a small folder with assets. To install:
+
+### Manual (FTP / file manager)
+1. Create folder `calc123` on your server:  
+   `/wp-content/plugins/calc123/`
+2. Upload these files into that folder:
+   - `calc123.php` (main plugin file)  
+   - `calc123-frontend.js` (frontend JS, enqueued by the plugin)  
+   - `calc123-frontend.css` (frontend CSS, enqueued by the plugin)  
+   - `about.html` (optional informational file shown in plugin details)  
+   - `.htaccess` (optional protection / rules — keep as provided)
+3. Set file permissions (typical):
+   - Folder: `755`
+   - Files: `644`
+4. In WP admin go to **Plugins → Installed Plugins** and click **Activate** for **Calc123**.
+5. Go to **Calc123** in the admin menu to create calculators and copy the shortcode into pages.
+
+### Install from zip (WP-Admin or WP-CLI)
+- Zip the `calc123` folder (it must contain the five files above at the root of the archive).  
+- Upload via **Plugins → Add New → Upload Plugin** and activate.  
+- Or with WP-CLI:
+```bash
+wp plugin install calc123.zip --activate
+
 
 ---
 
@@ -39,7 +61,7 @@ Create multiple calculators in the admin, define variables (number / select / hi
      - `hide` — optional checkbox to hide the field (value still used in calc)
    - Optional: set **currency display** text and position, enable **captcha**
 2. **Embed** in a page/post:  
-   сюда вставить шорткод  
+   `[calc123 id="N"]` 
    (Place the phrase above where you would insert the shortcode. If `id` is omitted in the admin UI, the first calculator will be used as a default.)
 
 ---
