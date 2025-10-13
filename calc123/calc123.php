@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Calc123
- * Description: Гибкий калькулятор по формулам с выводом шоткодом.
+ * Description: Гибкий калькулятор по формулам с выводом шорткодом.
  * Version: 1.3
  * Author: svtagan@gmail.com
  * Text Domain: calc123
@@ -1661,4 +1661,5 @@ function calc123_protect_about_html() {
         }
     }
 }
+
 
