@@ -69,6 +69,10 @@ This repository is a cleaned public baseline of the plugin. The older experiment
 
 Compatibility should be tested on a staging site before production use.
 
+## Disclaimer
+
+This plugin is provided as is, without any warranty. Test it on a staging site before using it in production. The authors and maintainers are not responsible for any issues, data loss, downtime or other damage caused by the use of this plugin.
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
