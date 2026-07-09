@@ -1,9 +1,13 @@
 <?php
 /**
  * Plugin Name: Calc123
+ * Plugin URI: https://github.com/c0dx-dev/calc123
  * Description: Гибкий калькулятор по формулам с выводом шорткодом.
  * Version: 1.3
- * Author: svtagan@gmail.com
+ * Author: c0dx-dev (c0dx.ru)
+ * Author URI: https://c0dx.ru/
+ * License: MIT
+ * License URI: https://opensource.org/licenses/MIT
  * Text Domain: calc123
  */
 
