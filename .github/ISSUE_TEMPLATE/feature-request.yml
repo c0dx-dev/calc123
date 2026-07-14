@@ -1,0 +1,48 @@
+name: Feature request
+description: Suggest a focused improvement for Calc123
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Keep proposals focused on practical calculator use. Large architectural changes should explain the migration and compatibility impact.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: Describe the practical limitation that the proposal should solve.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Explain the expected behavior and administrative or frontend workflow.
+    validations:
+      required: true
+
+  - type: textarea
+    id: example
+    attributes:
+      label: Example
+      description: Provide a sample formula, variable configuration or interface flow when useful.
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe workarounds or simpler approaches already considered.
+
+  - type: checkboxes
+    id: compatibility
+    attributes:
+      label: Project constraints
+      options:
+        - label: The proposal can preserve existing calculators and shortcodes.
+        - label: The proposal does not require an external service or heavy dependency, or explains why one is necessary.
+        - label: I checked the current documentation and existing issues.
+          required: true
